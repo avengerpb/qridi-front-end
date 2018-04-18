@@ -1,17 +1,12 @@
 import React, {Component} from 'react';
 import {
-  Badge,
   Row,
   Col,
   Card,
   CardHeader,
   CardBody,
   Table,
-  Pagination,
-  PaginationItem,
-  PaginationLink
 } from 'reactstrap';
-
 
 class Tables extends Component {
   render() {
@@ -58,7 +53,7 @@ class Tables extends Component {
             </Card>
           </Col>
 
-<Col xs="12" lg="6">
+          <Col xs="12" lg="6">
             <Card>
               <CardHeader>
                 <i className="fa icon-user"></i> Activity
