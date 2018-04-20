@@ -8,9 +8,8 @@ import Footer from '../../components/Footer/';
 // Base
 import Tables from '../../views/Base/Dashboard/';
 import Login from '../../views/Pages/Login/';
+import Polar from '../../views/Pages/Polar/';
 
-// Icons
-import SimpleLineIcons from '../../views/Icons/SimpleLineIcons/';
 // Notifications
 
 
@@ -25,9 +24,8 @@ class Full extends Component {
             <Breadcrumb/>
             <Container fluid>
               <Switch>
-                <Route path="/base/dashboard" name="Dashboard" component={Tables}/>
-                 <Route path="/icons/simple-line-icons" name="Simple Line Icons" component={SimpleLineIcons}/>
-                 <Redirect from="/" to="/login"/>
+                <Route path="/profile" name="Personal Detail" component={Tables}/>
+                <Redirect from="/" to="/login"/>
               </Switch>
             </Container>
           </main>

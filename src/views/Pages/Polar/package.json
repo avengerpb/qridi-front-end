@@ -1,0 +1,6 @@
+{
+  "name": "Polar",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Polar.js"
+}

@@ -30,7 +30,7 @@ class Login extends Component {
       else {
         console.log(data);
         this.setState({'logged': true});
-        const user = sessionStorage.setItem("userid", data['username'] );
+        const user = sessionStorage.setItem("username", data['username'] );
       }
   }
 
@@ -52,8 +52,9 @@ class Login extends Component {
 .catch(e => e);
 }
   render() {
-    if (this.state.logged){
-      return (<Redirect to='/register'/>);
+    var temp = sessionStorage.getItem("username");
+    if (this.state.logged || (temp !== null)){
+      return (<Redirect to='/profile'/>);
   }
   else {
     return (
@@ -104,5 +105,3 @@ class Login extends Component {
 }
 
 export default Login;
-
-

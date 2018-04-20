@@ -5,7 +5,7 @@ const routes = {
   '/base/switches': 'Switches',
   '/base/tables': 'Tables',
   '/base/breadcrumbs': 'Breadcrumbs',
-  '/dashboard': 'Dashboard',
+  '/profile': 'Profile',
   '/notifications': 'Notifications',
 };
 export default routes;

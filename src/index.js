@@ -21,12 +21,14 @@ import Full from './containers/Full/'
 import Login from './views/Pages/Login/'
 import Register from './views/Pages/Register/'
 import Page404 from './views/Pages/Page404/'
+import Polar from './views/Pages/Polar/'
 
 ReactDOM.render((
   <HashRouter>
     <Switch>
       <Route exact path="/login" name="Login Page" component={Login}/>
       <Route exact path="/register" name="Register Page" component={Register}/>
+      <Route exact path="/authentication" name="Polar" component={Polar}/>
       <Route exact path="/404" name="Page 404" component={Page404}/>
       <Route path="/" name="Home" component={Full}/>
     </Switch>

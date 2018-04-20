@@ -1,8 +1,8 @@
 export default {
   items: [
     {
-      name: 'Qridi Dashboard',
-      url: '/base/Dashboard',
+      name: 'Qridi',
+      url: 'https://qridi.fi/',
       icon: 'icon-speedometer',
       badge: {
         variant: 'info',
@@ -10,27 +10,24 @@ export default {
     },
     {
       name: 'Personal Details',
-      url: '/base/Dashboard',
+      url: '/profile',
       icon: 'icon-user',
     },
     {
       name: 'Group Details',
-      url: '/base/Dashboard',
+      url: '/group',
       icon: 'icon-people',
     },
     {
-      name: 'Activity',
-      url: '/base/Dashboard',
+      name: 'Update Activity',
+      url: '/update',
       icon: 'icon-puzzle',
     },
-// item end 
+// item end
     {
       name: 'Login with polar id',
-      url: '/Login',
+      url: '/authentication',
       icon: 'icon-cursor',
     },
   ]
 };
-
-
-
