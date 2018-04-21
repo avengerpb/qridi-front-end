@@ -6,6 +6,7 @@ import Sidebar from '../../components/Sidebar/';
 import Breadcrumb from '../../components/Breadcrumb/';
 import Footer from '../../components/Footer/';
 // Base
+import Group from '../../views/Base/Group/';
 import Tables from '../../views/Base/Dashboard/';
 import Login from '../../views/Pages/Login/';
 import Polar from '../../views/Pages/Polar/';
@@ -25,6 +26,7 @@ class Full extends Component {
             <Container fluid>
               <Switch>
                 <Route path="/profile" name="Personal Detail" component={Tables}/>
+                <Route path="/group" name="Group Detail" component={Group}/>
                 <Redirect from="/" to="/login"/>
               </Switch>
             </Container>

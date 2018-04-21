@@ -53,7 +53,9 @@ class Login extends Component {
 }
   render() {
     var temp = sessionStorage.getItem("username");
-    if (this.state.logged || (temp !== null)){
+    if ((this.state.logged === true) || (temp !== null)){
+      console.log(this.state.logged );
+      console.log(temp);
       return (<Redirect to='/profile'/>);
   }
   else {

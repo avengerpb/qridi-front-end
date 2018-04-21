@@ -29,6 +29,7 @@ class HeaderDropdown extends Component {
     sessionStorage.removeItem('username');
     sessionStorage.removeItem('polar-id');
     console.log('Log out');
+    console.log(sessionStorage.getItem('polar-id'));
   }
 
   dropAccnt() {

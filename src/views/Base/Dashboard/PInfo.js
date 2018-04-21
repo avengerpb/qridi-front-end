@@ -13,10 +13,6 @@ class PInfo extends Component {
     super(props);
    }
 
-     componentDidMount(){
-       console.log(this.props);
-     }
-
   render() {
     return (
       <Card>
@@ -28,27 +24,27 @@ class PInfo extends Component {
           <tbody>
             <tr>
               <td>Name</td>
-              <td>{this.props['first-name']}</td>
+              <td>{this.props.data['first-name']}</td>
             </tr>
             <tr>
               <td>Polar ID</td>
-              <td> </td>
+              <td>{this.props.data['polar-user-id']}</td>
             </tr>
             <tr>
               <td>Date of Birth</td>
-              <td>{this.props.birthdate}</td>
+              <td>{this.props.data['birthdate']}</td>
             </tr>
             <tr>
               <td>Gender</td>
-              <td> </td>
+              <td>{this.props.data['gender']}</td>
             </tr>
             <tr>
               <td>Weight</td>
-              <td> </td>
+              <td>{this.props.data['weight']}</td>
             </tr>
             <tr>
-              <td>Heart rate</td>
-              <td> </td>
+              <td>Height</td>
+              <td>{this.props.data['height']}</td>
             </tr>
           </tbody>
         </Table>

@@ -19,12 +19,6 @@ export default {
       icon: 'icon-people',
     },
     {
-      name: 'Update Activity',
-      url: '/update',
-      icon: 'icon-puzzle',
-    },
-// item end
-    {
       name: 'Login with polar id',
       url: '/authentication',
       icon: 'icon-cursor',
